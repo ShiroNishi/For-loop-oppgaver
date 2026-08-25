@@ -14,7 +14,11 @@
     <h2>Tell antall vokaler i en string</h2>
     <input onchange="tellVokaler(this.value)">
     <div>Vokaler: <spani id="vokaler"></span></div>
-    
+
+
+    <h2>Reverser inputen</h2>
+    <input onchange="reverserInput(this.value)">
+    <div>Din reverserte string:<span id="reverse"> </span></div>
     
 
 <script>
@@ -27,9 +31,6 @@
 
 
     // Antall vokaler i string
-    let string1 = "Heisann."
-    let string2 = "God morgen."
-    let string3 = "Dette er en lang string med en del vokaler. Wow."
     const alleVokaler = ["a", "e", "i", "o", "u", "y", "æ", "ø", "å"]
     let nyeVokaler = "";
 
@@ -43,6 +44,19 @@
         }
     }
 
+
+    //Reverser stringen
+
+    function reverserInput(message){
+        let newMessage = ""
+        for (let i = message.length - 1; i >= 0; i--){
+            newMessage += message[i];
+            console.log(newMessage);
+        }
+        document.getElementById('reverse').innerHTML = newMessage
+
+    }
+    
 </script>
 </body>
 </html>
