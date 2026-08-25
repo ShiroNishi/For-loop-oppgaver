@@ -12,3 +12,5 @@ Oops, jeg løste denne annerledes fordi jeg ikke leste siste setning nøye nok o
 
 Oppgave 3:
 Lag en funksjon som tar input fra brukeren og reverserer teksten ved hjelp av en for-løkke
+
+https://shironishi.github.io/For-loop-oppgaver/
