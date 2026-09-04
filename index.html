@@ -8,7 +8,7 @@
 <body>
     <h2>Sjekk konsoll output med F12</h2>
     <h3>Denne skal printe 2 gangen mellom 2 og 20</h3>
-    <button onclick="toGangen()">Løsning 1</button>
+    <button onclick="toGangen2()">Løsning 1</button>
 
 
     <h2>Tell antall vokaler i en string</h2>
@@ -22,6 +22,7 @@
     
 
 <script>
+
     // To Gangen
     function toGangen(){
         for (let i = 2; i <= 20; i += 2){
@@ -53,8 +54,18 @@
             newMessage += message[i];
             console.log(newMessage);
         }
-        document.getElementById('reverse').innerHTML = newMessage
+        document.getElementById('reverse').innerHTML = newMessage;
 
+    }
+
+    //Alternate reverser string:
+
+    function reverserInput2(message){
+        let newMessage = "";
+        for (let letter of message){
+            newMessage = letter + newMessage;
+            console.log(newMessage)
+        }
     }
     
 </script>
